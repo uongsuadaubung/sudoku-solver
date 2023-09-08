@@ -70,11 +70,8 @@ namespace Sudoku_solver
                 {
                     int value = _memory.ReadInt(current);
                     _grid[i, j].Value = value;
-                    _grid[i, j].Button.Text = value.ToString();
-                    _grid[i, j].Button.Font = value != 0
-                        ? new Font(_grid[i, j].Button.Font.FontFamily, 15, FontStyle.Bold)
-                        : new Font(_grid[i, j].Button.Font.FontFamily, 15);
-                    _grid[i, j].Button.Enabled = value == 0;
+                    _grid[i, j].CanEdit = value == 0;
+                    
                     if (value == 0)
                     {
                         _empty++;
@@ -162,8 +159,12 @@ namespace Sudoku_solver
                 for (int j = 0; j < GridSize; j++)
                 {
                     int value = _grid[i, j].Value;
+                    bool canEdit = _grid[i, j].CanEdit;
                     _grid[i, j].Button.Text = value.ToString();
-                    _grid[i, j].Button.ForeColor = Color.Red;
+                    _grid[i, j].Button.ForeColor = canEdit? Color.Red: Color.Black;
+                    _grid[i, j].Button.Font = new Font(_grid[i, j].Button.Font.FontFamily, 15,
+                        canEdit == false ? FontStyle.Bold : FontStyle.Regular);
+                    _grid[i, j].Button.Enabled = canEdit;
                 }
             }
         }

@@ -10,5 +10,7 @@ namespace Sudoku_solver
 
         public Button Button { get; }
         public int Value {  get; set; }
+        
+        public bool CanEdit { get; set; }
     }
 }
