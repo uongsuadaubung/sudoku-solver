@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"1"</Description>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"SudokuFree10.dll"+011B7038</Address>
+      <Offsets>
+        <Offset>1C</Offset>
+        <Offset>10</Offset>
+        <Offset>8</Offset>
+        <Offset>58</Offset>
+        <Offset>E8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"2"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"SudokuFree10.dll"+011B7038</Address>
+      <Offsets>
+        <Offset>134</Offset>
+        <Offset>10</Offset>
+        <Offset>8</Offset>
+        <Offset>58</Offset>
+        <Offset>E8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"3"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"SudokuFree10.dll"+011B7038</Address>
+      <Offsets>
+        <Offset>24c</Offset>
+        <Offset>10</Offset>
+        <Offset>8</Offset>
+        <Offset>58</Offset>
+        <Offset>E8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"No description"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>2294091719C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2294091719C+9d8</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>118
+9d8</Comments>
+</CheatTable>
