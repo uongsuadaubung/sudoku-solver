@@ -215,8 +215,8 @@ namespace Sudoku_solver
                         return;
                     }
 
-                    int value = _memory.ReadInt(current);
-                    if (value == 0)
+                    //int value = _memory.ReadInt(current);
+                    if (_grid[i, j].CanEdit) // can edit mean the original value is 0
                     {
                         _memory.WriteNumber(current, _grid[i, j].Value, 1);
                         _empty--;
